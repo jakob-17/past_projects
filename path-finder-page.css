@@ -1,0 +1,142 @@
+body {
+	background-color: #FFFFFF;
+}
+
+/* border start */
+#left, #right, #top, #bottom {
+	background: #000000;
+	position: fixed;
+}
+
+#left, #right {
+	top: 0; bottom: 0;
+	width: 8px;
+}
+#left { left: 0; }
+#right { right: 0; }
+
+#top, #bottom {
+	left: 0; right: 0;
+}
+#top {
+	height: 20px;
+	top: 0; 
+}
+#bottom { 
+	height: 8px;
+	bottom: 0; 
+}
+/* border end */
+
+@media
+/* phones */
+only screen and (max-width: 500px),
+/* tablets */
+only screen and (min-device-width: 768px) and (max-device-width: 1024px)
+{
+	#top, #bottom, #left, #right { display: none; } 
+}
+
+.header h1 {
+	text-align: center;
+	line-height: 200%; /**/
+	font-family: helvetica;
+	font-weight: bold;
+	text-decoration: underline;
+	text-transform: capitalize;
+	background-color: rgba(204,153,102,0.3);
+	background-width: 100%;
+	height: 75px; /**/
+}
+
+.header img {
+	float: right;
+	margin-left: 10%;
+	margin-right: 20%;
+	height: 75px; /**/
+	width: auto;
+}
+
+.header a {
+	float: left;
+	margin-top: 25px;
+	margin-right: 10%;
+	margin-left: 20%;
+	background-color: rgba(51,153,255,0.3);
+	padding: .3%;
+	border: 1px solid black;
+}
+
+.section {
+	background-color: rgba(204,153,102,0.1);
+	background-width: 100%;
+	height: 125%;
+}
+
+#slides1 {
+	/* margin: 50px auto; */
+	width: 45%;
+	height: auto; 
+	margin-left: 15px;
+}
+
+#slides2 {
+	/* margin: 50px auto; */
+	width: 38%;
+	height: auto; 
+	margin-left: 15px;
+}
+
+.box {
+	display: flex;
+	align-items: center;
+}
+
+.shape {
+	/* background:
+		linear-gradient(65deg, transparent 50%, rgba(3,78,136,0.7) 50%) left no-repeat,
+		linear-gradient(0deg, rgba(3, 78, 136, 0.7), rgba(3,78,136,0.7)) 30px 0 no-repeat;
+	*/	
+	background-color: rgba(51,153,255,0.3);
+	padding: 1%;
+	margin-left: 4%;
+	margin-right: 4%;
+	border-radius: 25px;
+	position: relative;
+	display: block;
+	border: 2px solid black;
+}
+
+#buttons1 {
+	width: 45%;
+	margin-right: 400px;
+	margin-left: 15px;
+}
+
+#buttons2 {
+	width: 38%;
+	margin-right: 400px;
+	margin-left: 15px;
+}
+
+#cap {
+	font-family: georgia;
+	font-size: 1.3em;
+	line-height: 1.5em;
+}
+
+.smallShape {
+	background-color: rgbadi;
+	padding: 1%;
+	margin-left: 4%;
+	margin-right: 4%;
+	border-radius: 25px;
+    display: inline-table;
+	border: 1px solid black;
+}
+
+#details {
+	font-family: Verdana;
+	font-size: 0.8em;
+	line-height: 1.2em;
+}

@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="lights-out-page.css">
+		<meta charset="utf-8">
+		<Title>Lights Out</Title>
+		<meta name="LightsOutPage" content="description and demo of the Lights Out project">
+	</head>
+	
+	<body>
+		<div class="header">
+			<a href="home.html">Home</a>
+			<h1>Lights Out</h1>
+		</div>
+		<br>
+		
+		<div class="w3-content w3-display-container">
+		<div class="section">
+			<div class="w3-display-left"> 
+				<div class="codeBox">
+					<img id="slides1" img style="vertical-align: middle" img class="eclipseSlides1" src="lightsoutpics/code1.JPG">
+					<img id="slides1" img style="vertical-align: middle" img class="eclipseSlides1" src="lightsoutpics/code2.JPG">
+					<img id="slides1" img style="vertical-align: middle" img class="eclipseSlides1" src="lightsoutpics/code3.JPG">
+					<img id="slides1" img style="vertical-align: middle" img class="eclipseSlides1" src="lightsoutpics/code4.JPG">
+					<img id="slides1" img style="vertical-align: middle" img class="eclipseSlides1" src="lightsoutpics/code5.JPG">
+					<img id="slides1" img style="vertical-align: middle" img class="eclipseSlides1" src="lightsoutpics/code6.JPG">
+					<img id="slides1" img style="vertical-align: middle" img class="eclipseSlides1" src="lightsoutpics/code1-2.JPG">
+					<img id="slides1" img style="vertical-align: middle" img class="eclipseSlides1" src="lightsoutpics/code2-2.JPG">
+				</div>
+				<button id="buttons1" button class="w3-button w3-black w3-display-left" onclick="plusDivs1(-1)">&#10094;</button>
+				<button id="buttons1" button class="w3-button w3-black w3-display-right" onclick="plusDivs1(1)">&#10095;</button>
+			</div>
+			<div class="w3-display-right">
+				<div class="appBox">
+					<img id="slides2" img style="vertical-align: middle" img class="eclipseSlides2" src="lightsoutpics/app1.PNG">
+					<img id="slides2" img style="vertical-align: middle" img class="eclipseSlides2" src="lightsoutpics/app2.PNG">
+					<img id="slides2" img style="vertical-align: middle" img class="eclipseSlides2" src="lightsoutpics/app3.PNG">
+					<img id="slides2" img style="vertical-align: middle" img class="eclipseSlides2" src="lightsoutpics/app4.PNG">
+					<img id="slides2" img style="vertical-align: middle" img class="eclipseSlides2" src="lightsoutpics/app5.PNG">
+				</div>
+				<button id="buttons2" button class="w3-button w3-black w3-display-left" onclick="plusDivs2(-1)">&#10094;</button>
+				<button id="buttons2" button class="w3-button w3-black w3-display-right" onclick="plusDivs2(1)">&#10095;</button>
+			</div>
+		</div>
+		</div>
+		
+		<p id="description">
+			This was the first major programming project I was assigned during my time at the University of Utah. CS 1410 served as
+			a introduction to object-oriented programming, with <span style="font-weight:bold">Java</span> being the language of choice.
+		</p>
+		<p id="description">
+			The Lights Out assignment tasked us with recreating the popular browser game of the same name. We had to complete the task in
+			Eclipse, just as with the rest of the assignments from that course, and we were also made to learn about Java's implementation
+			of GUIs. My two class system had a <span style="font-weight:bold">LightsOut</span> class which handled the GUI and ActionListeners, 
+			in addition to a <span style="font-weight:bold">LightButton</span> class that established all of the interactable "lights" on
+			the GUI panel. 
+		</p>
+		<p id="description">
+			We were also to add a unique element to our game which brought some life to the user experience. The game winning screen was my 
+			answer for that, making it so each light randomly chose a color to switch to, as well as adding the You Win! text to the center
+			light button. What made the project so enjoyable was that the entire program was by my design. There was no skeleton to build off of,
+			or special concept which had to be included. This allowance for real creativity, coupled with the visual element of the GUI, easily
+			makes this my favorite programming assignment from 1410.
+		</p>
+		
+		<br></br><br></br><br></br>
+		
+		<div class="snippet">
+			<h3>
+				Below is a modified recreation of the game using a combination of HTML, CSS, and Javascript. Please try it for yourself. :)
+			</h3>
+		</div>
+		
+		<br></br>
+			
+		<div class="light-container">
+			<div class="light-button" id="lb0" onclick="swapColor(new Array(0, 1, 5))"></div>
+			<div class="light-button" id="lb1" onclick="swapColor(new Array(1, 0, 2, 6))"></div>
+			<div class="light-button" id="lb2" onclick="swapColor(new Array(2, 1, 3, 7))"></div>
+			<div class="light-button" id="lb3" onclick="swapColor(new Array(3, 2, 4, 8))"></div>
+			<div class="light-button" id="lb4" onclick="swapColor(new Array(4, 3, 9))"></div>
+			<div class="light-button" id="lb5" onclick="swapColor(new Array(5, 0, 6, 10))"></div>
+			<div class="light-button" id="lb6" onclick="swapColor(new Array(6, 1, 5, 7, 11))"></div>
+			<div class="light-button" id="lb7" onclick="swapColor(new Array(7, 2, 6, 8, 12))"></div>
+			<div class="light-button" id="lb8" onclick="swapColor(new Array(8, 3, 7, 9, 13))"></div>
+			<div class="light-button" id="lb9" onclick="swapColor(new Array(9, 4, 8, 14))"></div>
+			<div class="light-button" id="lb10" onclick="swapColor(new Array(10, 5, 11, 15))"></div>
+			<div class="light-button" id="lb11" onclick="swapColor(new Array(11, 6, 10, 12, 16))"></div>
+			<div class="light-button" id="lb12" onclick="swapColor(new Array(12, 7, 11, 13, 17))"></div>
+			<div class="light-button" id="lb13" onclick="swapColor(new Array(13, 8, 12, 14, 18))"></div>
+			<div class="light-button" id="lb14" onclick="swapColor(new Array(14, 9, 13, 19))"></div>
+			<div class="light-button" id="lb15" onclick="swapColor(new Array(15, 10, 16, 20))"></div>
+			<div class="light-button" id="lb16" onclick="swapColor(new Array(16, 11, 15, 17, 21))"></div>
+			<div class="light-button" id="lb17" onclick="swapColor(new Array(17, 12, 16, 18, 22))"></div>
+			<div class="light-button" id="lb18" onclick="swapColor(new Array(18, 13, 17, 19, 23))"></div>
+			<div class="light-button" id="lb19" onclick="swapColor(new Array(19, 14, 18, 24))"></div>
+			<div class="light-button" id="lb20" onclick="swapColor(new Array(20, 15, 21))"></div>
+			<div class="light-button" id="lb21" onclick="swapColor(new Array(21, 16, 20, 22))"></div>
+			<div class="light-button" id="lb22" onclick="swapColor(new Array(22, 17, 21, 23))"></div>
+			<div class="light-button" id="lb23" onclick="swapColor(new Array(23, 18, 22, 24))"></div>
+			<div class="light-button" id="lb24" onclick="swapColor(new Array(24, 19, 23))"></div>
+			
+			
+			<div class="empty"></div>
+			
+			<p id="counter">0</p>
+				
+			<div class="empty"></div>
+			<div class="btn-toolbar">
+				<button type="button" id="btn-random" onclick="generateBoard()">Randomize</button>
+				<button type="button" id="btn-hint" onclick="giveHint()">Hint</button>
+			</div>	
+			<div class="empty"></div>	
+
+			<p id="hintText"></p>
+		</div>
+		
+		<body onload="generateBoard()">
+		
+		<script>
+			// create game board
+			function generateBoard() {
+				var arr = document.getElementsByClassName("light-button");
+				for (var i = 0; i < arr.length; i++) {
+					document.getElementById("lb"+i).style.backgroundColor = "black";
+					document.getElementById("lb"+i).style.pointerEvents = "auto"; // enable click-ability
+				}
+				var clickNum = Math.floor(Math.random() * 5 + 5);
+				for (var j = 0; j < clickNum; j++) {
+					document.getElementById("lb"+(Math.floor(Math.random() * 25))).click();
+				}
+				resetCounterAndHint(); // counter was incremented during bot clicks
+			}
+			// swap the color of each tile from black to white or vice versa
+			function swapColor(lightNums) {
+				for (var i = 0; i < lightNums.length; i++) {
+					var light = document.getElementById("lb"+lightNums[i]);
+					if (light.style.backgroundColor == "black") {
+						light.style.backgroundColor = "white";
+					}
+					else {
+						light.style.backgroundColor = "black";
+					}
+				}
+				addCounter();
+				gameWinCheck();
+			}
+			// increments the moves counter
+			function addCounter() {
+				var count = document.getElementById("counter").innerHTML;
+				document.getElementById("counter").innerHTML = ++count;
+			}
+			// do I have to explain this one?
+			function resetCounterAndHint() {
+				document.getElementById("counter").innerHTML = "0";
+				document.getElementById("hintText").innerHTML = "";
+			}
+			// ensure all lights are off before displaying win text and disabling light clicks
+			function gameWinCheck() {
+				var arr = document.getElementsByClassName("light-button");
+				for (var i = 0; i < arr.length; i++) {
+					if (document.getElementById("lb"+i).style.backgroundColor == "white") {
+						return;
+					}
+				}
+				document.getElementById("hintText").innerHTML = "You Win!";
+				for (var i = 0; i < arr.length; i++) {
+					document.getElementById("lb"+i).style.pointerEvents = "none"; // remove click-ability
+				}
+			}
+			// ensures that the first four rows of lights have been switched off before 
+			// 		evaluating the bottom row to determine the correct hint to give
+			function giveHint() {
+				var arr = document.getElementsByClassName("light-button");
+				for (var i = 0; i < arr.length - 5; i++) {
+					if (document.getElementById("lb"+i).style.backgroundColor == "white") {
+						document.getElementById("hintText").innerHTML = 
+							"Sorry, only have lights in the bottom row before asking for a hint";
+						return;
+					}
+				}
+				var l1 = document.getElementById("lb20").style.backgroundColor;
+				var l2 = document.getElementById("lb21").style.backgroundColor;
+				var l3 = document.getElementById("lb22").style.backgroundColor;
+				var l4 = document.getElementById("lb23").style.backgroundColor;
+				var l5 = document.getElementById("lb24").style.backgroundColor;
+				if (l1 == "white" && l5 == "white" && l2 == "black") {
+					document.getElementById("hintText").innerHTML = 
+						"On the top row, click on the first and second light and work your way down";
+				}
+				else if (l2 == "white" && l4 == "white" && l1 == "black") {
+					document.getElementById("hintText").innerHTML = 
+						"On the top row, click on the first and fourth light and work your way down";
+				}
+				else if (l1 == "white" && l2 == "white" && l3 == "white") {
+					document.getElementById("hintText").innerHTML = 
+						"On the top row, click on the second light and work your way down";
+				}
+				else if (l3 == "white" && l4 == "white" && l5 == "white") {
+					document.getElementById("hintText").innerHTML = 
+						"On the top row, click on the fourth light and work your way down";
+				}
+				else if (l1 == "white" && l3 == "white" && l4 == "white") {
+					document.getElementById("hintText").innerHTML = 
+						"On the top row, click on the fifth light and work your way down";
+				}
+				else if (l2 == "white" && l3 == "white" && l5 == "white") {
+					document.getElementById("hintText").innerHTML = 
+						"On the top row, click on the first light and work your way down";
+				}
+				else if (l1 == "white" && l2 == "white" && l4 == "white" && l5 == "white") {
+					document.getElementById("hintText").innerHTML = 
+						"On the top row, click on the third light and work your way down";
+				}
+				else {
+					document.getElementById("hintText").innerHTML = 
+						"Unable to display a hint for this scenario :)";
+				}
+			}
+			
+			/// everything below controls the slides
+			var slideIndex = 1;
+			showDivs1(slideIndex);
+			showDivs2(slideIndex);
+			
+			function plusDivs1(n) {
+				showDivs1(slideIndex += n);
+			}
+			function plusDivs2(n) {
+				showDivs2(slideIndex += n);
+			}
+			
+			function showDivs1(n) {
+				var i;
+				var x = document.getElementsByClassName("eclipseSlides1");
+				if (n > x.length) {slideIndex = 1}
+				if (n < 1) {slideIndex = x.length}
+				for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none";
+				}
+				x[slideIndex-1].style.display = "block";
+			}
+			function showDivs2(n) {
+				var i;
+				var x = document.getElementsByClassName("eclipseSlides2");
+				if (n > x.length) {slideIndex = 1}
+				if (n < 1) {slideIndex = x.length}
+				for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none";
+				}
+				x[slideIndex-1].style.display = "block";
+			}
+		</script>
+	</body>
+</html>

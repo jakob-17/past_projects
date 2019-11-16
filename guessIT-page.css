@@ -1,0 +1,59 @@
+body {
+	background-color: rgba(0, 0, 51, .5);
+}
+
+.header {
+	background-color: rgba(0, 0, 0, .9);
+}
+
+.header a {
+	background-color: rgba(255, 255, 255, .8);
+	padding: 5px;
+	display: inline-block;
+	margin-left: 40%;
+	margin-right: 10%;
+}
+
+.header h1 {
+	color: rgba(255, 255, 102, .9);
+	display: inline-block;
+}
+
+.shape {
+	background-color: rgba(255,255,204,0.9);
+	padding: 1%;
+	margin-left: 4%;
+	margin-right: 4%;
+	border-radius: 25px;
+	position: relative;
+	display: block;
+	border: 2px solid black;
+}
+
+#cap {
+	font-family: Trebuchet MS;
+	line-height: 1.2em;
+}
+
+#add {
+	font-family: Trebuchet MS;
+	line-height: 1.2em;
+}
+
+/**/
+.section {
+	display: inline-block;
+	width: 100%;
+}
+
+#slides1, #slides2 {
+	width: 50%;
+	height: auto;
+	margin-left: 25%;
+}
+
+#buttons1, #buttons2 {
+	width: 50%;
+	margin-left: 25%;
+}
+/**/

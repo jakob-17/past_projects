@@ -1,0 +1,80 @@
+body {
+	background-color: #99CCCC;
+	border: 3px green;
+	border-style: solid none;
+}
+
+h1 {
+	color: #FFFFFF;
+	text-transform: capitalize;
+	text-align: center;
+	font-family: arial;
+	font-weight: bold;
+	font-stretch: normal;	
+	text-decoration: underline;
+	margin-right: 125px; /*adjusted for profile pic*/
+/*	
+	-moz-animation-duration: 3s;
+	-webkit-animation-duration: 3s;
+	-moz-animation-name: slidein;
+	-webkit-animation-name: slidein;
+*/
+	
+}
+/*
+	@-moz-keyframes slidein {
+		from {
+			margin-left: 100%;
+			width: 300%;
+		}
+		to {
+			margin-left: 50%;
+            width: 100%;
+		}
+	}
+	@-webkit-keyframes slidein {
+		from {
+			margin-left: 100%;
+			width: 300%;
+		}
+		to {
+			margin-left: 50%;
+            width: 100%;
+		}
+	}
+*/
+
+#profile {
+	max-width: 125px;
+	height: auto;
+	border: 3px dashed black;
+}
+
+#code {
+	font-family: courier;
+	margin-right: 125px; /*adjusted for profile pic*/
+}
+
+#intro {
+	font-family: helvetica;
+}
+
+caption {
+	font-family: arial;
+	font-weight: bold;
+}
+
+table {
+	text-align: center;
+	border-color: #FFFFFF;
+	border-style: outset;
+	margin-top: 25px;
+	margin: 50px auto; /* "auto" centers the table */
+	line-height: 50px;
+	border-radius: 25px;
+}
+
+td {
+	background-color: rgba(255,255,255,.7);
+	border-radius: 25px;
+}

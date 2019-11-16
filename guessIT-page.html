@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="guessIT-page.css"
+		<meta charset="utf-8">
+		<Title>GuessIT</Title>
+		<meta name="GuessITPage" content="description and demo of the GuessIT project">
+		
+	</head>
+	
+	<body>
+		<div class="header">
+			<a href="home.html">Home</a>
+			<h1>GuessIT</h1>
+		</div>
+		<br>
+		
+		<div class="shape">
+			<span style="" text id="cap">
+				This was the final project for a <span style="font-weight:bold">C++</span> programming course I took during my senior
+				year of high school. That course was my very first introduction to real programming (I had written programs before, 
+				but those were through YouTube tutorials on making games in the Unity engine). Throughout my time in this class, I 
+				learned that computer science truly was what I wanted to study in college. Each assignment felt more like a fun		
+				challenge, rather than a chore, and I quickly began anticipating the new concepts we'd learn at each class session.
+			</span>
+		</div>
+		<br></br>
+		
+		<div class="w3-content w3-display-container">
+			<div class="section">
+				<div class="w3-display-left">
+					<div class="codeBox">
+						<img id="slides1" img style="vertical-align: middle" img class="netbeansSlides1" src="guessITpics/code1.JPG">
+						<img id="slides1" img style="vertical-align: middle" img class="netbeansSlides1" src="guessITpics/code2.JPG">
+						<img id="slides1" img style="vertical-align: middle" img class="netbeansSlides1" src="guessITpics/code3.JPG">
+					</div>
+					<button id="buttons1" button class="w3-button w3-black w3-display-left" onclick="plusDivs1(-1)">&#10094;</button>
+					<button id="buttons1" button class="w3-button w3-black w3-display-right" onclick="plusDivs1(1)">&#10095;</button>
+				</div>
+			<br></br>
+				<div class="w3-display-right">
+					<div class="appBox">
+						<img id="slides2" img style="vertical-align: middle" img class="netbeansSlides2" src="guessITpics/output1.JPG">
+						<img id="slides2" img style="vertical-align: middle" img class="netbeansSlides2" src="guessITpics/output2.JPG">
+					</div>
+					<button id="buttons2" button class="w3-button w3-black w3-display-left" onclick="plusDivs2(-1)">&#10094;</button>
+					<button id="buttons2" button class="w3-button w3-black w3-display-right" onclick="plusDivs2(1)">&#10095;</button>
+				</div>
+			</div>
+		</div>
+		
+		<br></br>
+		<div class="shape"> 
+			<span style="" text id="add">
+				The goal of this final assignment was to recreate a number guessing game demonstrated to us during class. The computer 
+				randomly chooses three digits, and the player is tasked with guessing the correct three digit sequence (ideally in 7
+				guesses or under). It looks quite primitive now, but even so, I'm proud of this little program; it's what made me 
+				certain that this could be turned into a real career. For that, I'll always be thankful for this assignment, and the
+				entire introductory course itself.
+			</span>
+		</div>
+				
+		<script>
+			var slideIndex = 1;
+			showDivs1(slideIndex);
+			showDivs2(slideIndex);
+			
+			function plusDivs1(n) {
+				showDivs1(slideIndex += n);
+			}
+			function plusDivs2(n) {
+				showDivs2(slideIndex += n);
+			}
+			
+			function showDivs1(n) {
+				var i;
+				var x = document.getElementsByClassName("netbeansSlides1");
+				if (n > x.length) {slideIndex = 1}
+				if (n < 1) {slideIndex = x.length}
+				for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none";
+				}
+				x[slideIndex-1].style.display = "block";
+			}
+			function showDivs2(n) {
+				var i;
+				var x = document.getElementsByClassName("netbeansSlides2");
+				if (n > x.length) {slideIndex = 1}
+				if (n < 1) {slideIndex = x.length}
+				for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none";
+				}
+				x[slideIndex-1].style.display = "block";
+			}
+		</script>
+	</body>	
+</html>
