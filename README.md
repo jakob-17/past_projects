@@ -1,4 +1,4 @@
 # past_projects
-Here's a collection of some of the stuff I've worked on for school or for my own enjoyment.
+This project was completed in Intro to Algorithms and Data Structures with a programming partner.
 
-Each branch of this repo will direct you to a different programming project. Have a look!
+It functions similarly to a balanced symbol checker that is utilized in an IDE, with this program taking a text file as input.
