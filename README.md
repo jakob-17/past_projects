@@ -1,4 +1,4 @@
 # past_projects
-Here's a collection of some of the stuff I've worked on for school or for my own enjoyment.
+A website that I created over the summer of 2019 to practice front end web development.
 
-Each branch of this repo will direct you to a different programming project. Have a look!
+Along with HTML and CSS, Javascipt makes up a significant portion of "lights-out" and other files to add interactivity to the pages. 
