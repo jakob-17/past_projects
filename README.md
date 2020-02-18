@@ -1,4 +1,4 @@
 # past_projects
-Here's a collection of some of the stuff I've worked on for school or for my own enjoyment.
+A Computer Organization assignment which generates Pascal's Triangle to a specified number of rows.
 
-Each branch of this repo will direct you to a different programming project. Have a look!
+This project was written in MIPS assembly.
