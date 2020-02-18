@@ -1,4 +1,4 @@
 # past_projects
-Here's a collection of some of the stuff I've worked on for school or for my own enjoyment.
+A generic implementation of merge sort and quicksort that was created with a programming partner in Intro to Algorithms and Data Structures.
 
-Each branch of this repo will direct you to a different programming project. Have a look!
+Written in Java using Eclipse.
