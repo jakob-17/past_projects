@@ -1,4 +1,5 @@
 # past_projects
-Here's a collection of some of the stuff I've worked on for school or for my own enjoyment.
+These files are a portion of a sprite editor created in a team of 6 for Software Practice II. I was the main contributer for the "spritetools" files, helped with the "mainwindow" files, 
+and also created the "shiftPixels" and "fillPixels" methods inside the "Canvas" files.
 
-Each branch of this repo will direct you to a different programming project. Have a look!
+This project was written in C++ using Qt Creator on Linux Ubuntu.
